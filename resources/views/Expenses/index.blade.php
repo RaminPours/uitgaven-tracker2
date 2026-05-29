@@ -51,10 +51,10 @@
     <table border="1" cellpadding="6" cellspacing="0">
         <thead>
             <tr>
-                <th>Omschrijving</th>
+                <th>Categorie</th>
                 <th>Bedrag</th>
                 <th>Datum</th>
-                <th>Categorie</th>
+                <th>Omschrijving</th>
                 <th>Actie</th>
             </tr>
         </thead>
@@ -62,10 +62,10 @@
         <tbody>
             @foreach ($expenses as $expense)
                 <tr>
-                    <td>{{ $expense->title }}</td>
+                    <td>{{ $expense->category->name }}</td>
                     <td>€{{ number_format($expense->amount, 2, ',', '.') }}</td>
                     <td>{{ $expense->date }}</td>
-                    <td>{{ $expense->category->name }}</td>
+                    <td>{{ $expense->title }}</td>
                     <td>
                         <form method="POST" action="{{ route('expenses.destroy', $expense) }}">
                             @csrf
