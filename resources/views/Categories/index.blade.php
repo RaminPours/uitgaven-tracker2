@@ -28,7 +28,7 @@
 
         <input type="text" name="name" placeholder="Categorienaam" style="padding: 6px; border-radius: 10px;">
 
-        <button type="submit" style="padding: 6px; border-radius: 10px;">Opslaan</button>
+        <button type="submit" style="background-color: #4CAF50; color: white; padding: 6px 20px; border: none; cursor: pointer; border-radius: 6px;">Opslaan</button>
     </form>
 
     <h2>Alle categorieën</h2>

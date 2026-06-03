@@ -43,7 +43,7 @@
             @endforeach
         </select>
 
-        <button type="submit">Opslaan</button>
+        <button type="submit" style="background-color: #4CAF50; color: white; padding: 6px 20px; border: none; cursor: pointer; border-radius: 6px;">Opslaan</button>
     </form>   
 
     <hr>
