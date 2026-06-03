@@ -46,7 +46,7 @@
         <button type="submit" style="background-color: #4CAF50; color: white; padding: 6px 20px; border: none; cursor: pointer; border-radius: 6px;">Opslaan</button>
     </form>   
 
-    <hr>
+    <hr style="width: 100%; margin: 20px 0;">
 
     <table border="1" cellpadding="6" cellspacing="0">
         <thead>
