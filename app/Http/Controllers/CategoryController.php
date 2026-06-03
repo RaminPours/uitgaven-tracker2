@@ -29,9 +29,9 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index');  
     }
+
+    
     // Verwijder een categorie, maar alleen als er geen uitgaven aan gekoppeld zijn
-
-
     public function destroy(Category $category)
 {   // Controleer of er nog uitgaven aan deze categorie gekoppeld zijn
     if ($category->expenses()->count() > 0) {

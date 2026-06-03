@@ -13,9 +13,6 @@
         <a href="{{ route('expenses.index') }}">Naar uitgaven</a>
 
     </p>
-
-
-
     <h2>Nieuwe categorie</h2>
 
     @if ($errors->any())
@@ -29,14 +26,14 @@
     <form method="POST" action="{{ route('categories.store') }}">
         @csrf
 
-        <input type="text" name="name" placeholder="Categorienaam">
+        <input type="text" name="name" placeholder="Categorienaam" style="padding: 6px; border-radius: 10px;">
 
-        <button type="submit">Opslaan</button>
+        <button type="submit" style="padding: 6px; border-radius: 10px;">Opslaan</button>
     </form>
 
     <h2>Alle categorieën</h2>
 
-   <table border="1" cellpadding="6" cellspacing="0">
+   <table border="1" cellpadding="10" cellspacing="2">
     <thead>
         <tr>
             <th>ID</th>
